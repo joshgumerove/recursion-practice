@@ -33,4 +33,18 @@ def dfs(tree):
 #         right_sum = sum_tree(tree.right)
 #         return root.data + left_sum + right_sum
 
+def waysToClimb(n, possibleSteps):
+  if n == 0:
+    return 1
+  else:
+    nbWays = 0
+    for steps in possibleSteps: # 2
+      if (n-steps) >= 0: # 10 -2, 8 -2 [8, 6]
+        nbWays += waysToClimb(n-steps, possibleSteps) #[8 -2, 8 -4, 8-8, 8 -0]
+    return nbWays                                     #[6, 4, 3, 0] 
+                                                      #[4, 2, 1]               
+  
+  steps = [2, 4, 5, 8]
+  n = 10
+
     
