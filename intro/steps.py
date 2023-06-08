@@ -67,3 +67,9 @@ def is_prime(n, i=2):
         return is_prime(n, i + 1)
 
 print(is_prime(53))
+
+# 2 --> 1 print(1) print(2 what)
+# 2 (second) --> print(1)
+# 3 --> print(3)
+# 3(second) --> print(1) print(2 what)
+# 4 --> print (4 waht)
