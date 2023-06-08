@@ -25,10 +25,12 @@ def dfs(tree):
         dfs(tree.left)
         dfs(tree.right)
         
-def sum_tree(tree):
-    if tree is None:
-        return 0
-    else: 
-        left_sum = sum_tree(tree.left)
-        right_sum = sum_tree(tree.right)
-        return root.data + left_sum + right_sum
+# def sum_tree(tree):
+#     if tree is None:
+#         return 0
+#     else: 
+#         left_sum = sum_tree(tree.left)
+#         right_sum = sum_tree(tree.right)
+#         return root.data + left_sum + right_sum
+
+    
