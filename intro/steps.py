@@ -56,3 +56,14 @@ def func2(n):
         
 
 func2(4)
+
+def is_prime(n, i=2):
+    if i == n:
+        return True # base case that ends loop
+    elif n % i == 0:
+        return False # base case that may occur and end loop earlier
+    else:
+        print(n, " what is it", i)
+        return is_prime(n, i + 1)
+
+print(is_prime(53))
