@@ -11,6 +11,8 @@ def fib_memoized(n, lookup={}):
     
     ans = fib_memoized(n - 1) + fib_memoized(n -2)
     lookup[key] = ans
+    print(lookup)
+    print(ans)
     return ans
 
-print(fib_memoized(3))
+print(fib_memoized(10))
