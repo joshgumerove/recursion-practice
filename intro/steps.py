@@ -51,7 +51,7 @@ def func2(n):
         print(1)
     else:
         func2(n-1)
-        print(n, "what")
+        print(n, "what is it here and now")
         func2(n -1) # note the order this runs in
         
 
