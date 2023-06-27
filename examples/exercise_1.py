@@ -20,7 +20,7 @@ def recurse_count_occurences(arr, num):
     occurences = 0
     if num == arr.pop():
         occurences += 1
-    return occurences + recurse_count(arr, num)
+    return occurences + recurse_count_occurences(arr, num)
 
 print(recurse_count_occurences([3, 4, 3, 3, 2, 1, 4, 3], 4))
     
