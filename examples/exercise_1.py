@@ -23,6 +23,14 @@ def recurse_count_occurences(arr, num):
     return occurences + recurse_count_occurences(arr, num)
 
 print(recurse_count_occurences([3, 4, 3, 3, 2, 1, 4, 3], 4))
-    
+
+def has_adjacent_occurences(s, i = 1):
+    if len(s) == i:
+        return False
+    if s[i] == s[i -1]:
+        return True
+    return has_adjacent_occurences(s, i + 1) 
+
+print(has_adjacent_occurences("programing"))
     
 
